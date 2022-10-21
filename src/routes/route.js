@@ -1,6 +1,61 @@
 const express = require('express');
 const router = express.Router();
 
+
+// 20 October assignment
+let persons1= [
+    {
+    name: "PK",
+    age: 10,
+    votingStatus: false
+ },
+ {
+    name: "SK",
+    age: 20,
+    votingStatus: false
+ },
+ {
+    name: "AA",
+    age: 70,
+    votingStatus: false
+ },
+ {
+    name: "SC",
+    age: 5,
+    votingStatus: false
+ },
+ {
+    name: "HO",
+    age: 40,
+    votingStatus: false
+ }
+ ]
+
+//  let person2 = [];
+ 
+ 
+router.post('/persone_Age', function(req,res){
+    let a = [];
+    let b = req.query.age
+    for(i=0; i<=persons1.length-1; i++) {
+        if(persons1[i].age>= b) {
+            persons1[i].votingStatus = true
+            a.push(persons1[i].name)
+        }
+    }
+    res.send(
+        {
+            eligible_candidates : a,
+            status: true
+        }
+    )
+})
+
+router.get('/Find2', function(req, res){
+    res.send(console.log(ToatlSum-ToatlSum2));
+})
+
+
 router.get('/students/:name', function(req, res) {
     let studentName = req.params.name
     console.log(studentName)

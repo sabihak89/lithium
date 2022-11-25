@@ -37,8 +37,8 @@ let collegeDetails = async function (req, res) {
         } else {
             res.status(400).send({ status: false, msg: "CollegeName must be present in the request parameters" })
         }
-    } catch (error) {
-        res.status(500).send({ staus: false, msg: error.message })
+    } catch (err) {
+        res.status(500).send({ staus: false, msg: err.message })
     }
 }
 

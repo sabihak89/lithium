@@ -1,0 +1,27 @@
+{
+  "name": "lithium",
+  "version": "1.0.0",
+  "description": "Backend Developer Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabihak89/lithium.git"
+  },
+  "author": "Aman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabihak89/lithium/issues"
+  },
+  "homepage": "https://github.com/sabihak89/lithium#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.2",
+    "nodemon": "^2.0.20",
+    "time-slots-generator": "^1.0.6"
+  }
+}
